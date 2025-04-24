@@ -3,11 +3,11 @@ p {
 }
 
 p.info {
-	font-size: small;
+	font-size: 10pt;
 }
 
 h1 {
-	background-color: #dfdfdf;
+	background-color: #7f7fcf;
 }
 
 h2 {
@@ -17,8 +17,8 @@ h2 {
 
 div#zentai {
 	display: flex;
-	grid-direction: row;
-	width: 200px;
+	flex-direction: row;
+	width: 1024px;
 }
 
 div#zentai > div {
