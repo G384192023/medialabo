@@ -1,5 +1,24 @@
-ファイル: styles.css
-
 p {
-    color: green;
+    font-family: cursive;
+	color: rgb(13, 120, 166);
+}
+
+p.info {
+	font-size: small;
+	background-color: #ff0000;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+	text-shadow: rgb(33, 100, 255) 1px 0 10px;
+}
+ 
+h2 {
+	color: rgb(0, 0, 0);
+	background: linear-gradient(.25turn, rgb(191, 207, 235), 50%, #5cd3ff);
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+	text-shadow: rgb(33, 100, 255) 1px 0 10px;
 }
