@@ -15,4 +15,13 @@ let gakka = [
 ];
 
 //////////////// ここから下にプログラムを書きたそう!
+campus
+Object { address: "八王子市館町", buildingD: (8) […], lon: 35.624869704425, lat: 139.28201056633 }
 
+for (let n of campus.buildingD) {
+  console.log(n);
+}
+
+for (let s of gakka) {
+  console.log(s.name);
+}
