@@ -6,7 +6,7 @@ console.log('答え（デバッグ用）: ' + kotae);
 let kaisu = 0;
 
 // 予想を4回実行する
-let hantei = 4;
+let hantei = 0;
 // 将来以下の hantei(); の4回の呼び出しを全て削除する
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
 hantei();
