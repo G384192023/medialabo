@@ -26,7 +26,7 @@ function hantei() {
     // 課題3-1における出力先はコンソール
 
     if (kaisu >= 3 || seikai) {
-        console.log("答えは " + kotae + " でした。すでにゲームは終わっています。");
+        console.log("答えは " + kotae + " でした。すでにゲームは終わっています");
     return;
     }
 
@@ -38,7 +38,7 @@ function hantei() {
         seikai = true;
     } else {
         if (kaisu >= 3) {
-            console.log("まちがい。残念でした答えは " + kotae + " です。");
+            console.log("まちがい。残念でした答えは " + kotae + " です");
         } else if (yoso < kotae) {
             console.log("まちがい。答えはもっと大きいですよ");
         } else {
