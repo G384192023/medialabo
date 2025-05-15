@@ -1,0 +1,14 @@
+li {
+	color: blue;
+}
+
+li.notice {
+	color: red;
+	font-weight: bold;
+}
+
+li.warning {
+	background-color: cyan;
+	border: 1px navy solid;
+}
+

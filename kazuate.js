@@ -3,7 +3,7 @@ let kotae = Math.floor(Math.random()*10) + 1;
 console.log('答え（デバッグ用）: ' + kotae);
 
 // 入力回数（予想回数）
-let kaisu = span#kaisu;
+let kaisu = 1;
 
 // 予想を4回実行する
 
@@ -13,7 +13,6 @@ let kaisu = span#kaisu;
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
     // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
-    <input type="text" name="shimei" size="10" id="yoso">
 
     let seikai = false;
   
@@ -23,7 +22,7 @@ function hantei() {
 
     if (kaisu >= 3 || seikai) {
         console.log("答えは " + kotae + " でした。すでにゲームは終わっています");
-    return;
+        return;
     }
 
     kaisu++;
