@@ -1,0 +1,16 @@
+#main {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: 50px;
+	grid-gap: 10px;
+	width: 300px;
+}
+
+.cell {
+	padding: 10px;
+	border: 1px solid #cfcfcf;
+}
+
+.cell.clicked {
+	border: 2px solid navy;
+}

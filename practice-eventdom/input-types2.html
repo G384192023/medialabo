@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>さまざまな type のinput要素2</title>
+	<link rel="stylesheet" href="input-types.css">
+	<script src="input-types2.js" defer></script>
+  </head>
+
+  <body>
+    <h1>さまざまな type のinput要素2</h1>
+	<div class="twocol">
+		<div class="left">
+<pre>
+<code>
+&lt;label for="c"&gt;色&lt;/label&gt;
+&lt;input type="color" name="c"&gt;
+&lt;label for="d"&gt;日付&lt;/label&gt;
+&lt;input type="date" name="d"&gt;
+&lt;label for="t"&gt;時刻&lt;/label&gt;
+&lt;input type="time" name="t"&gt;
+&lt;label for="f"&gt;ファイル&lt;/label&gt;
+&lt;input type="file" name="f"&gt;
+&lt;label for="p"&gt;パスワード&lt;/label&gt;
+&lt;input type="password name="p""&gt;
+&lt;label for="r"&gt;範囲&lt;/label&gt;
+&lt;input type="range" min="3" max="15" name="r"&gt;
+&lt;label for="s"&gt;検索&lt;/label&gt;
+&lt;input type="search"&gt;
+</code>
+</pre>
+		</div>
+		<div class="right">
+			<p>
+				<label for="c">色</label></code>
+				<input type="color" name="c">
+				<button name="c">値取得</button>
+				<span id="val_c"></span>
+			</p>
+			<p>
+				<label for="d">日付</label></code>
+				<input type="date" name="d">
+				<button name="d">値取得</button>
+				<span id="val_d"></span>
+			</p>
+			<p>
+				<label for="t">時間</label>
+				<input type="time" name="t">
+				<button name="t">値取得</button>
+				<span id="val_t"></span>
+			</p>
+			<p>
+				<label for="f">ファイル</label>
+				<input type="file" name="f">
+				<button name="f">値取得</button>
+				<span id="val_f"></span>
+			</p>
+			<p>
+				<label for="p">パスワード</label>
+				<input type="password" name="p">
+				<button name="p">値取得</button>
+				<span id="val_p"></span>
+			</p>
+			<p>
+				<label for="r">範囲</label>
+				<input type="range" min="3" max="15" name="r">
+				<button name="r">値取得</button>
+				<span id="val_r"></span>
+			</p>
+			<p>
+				<label for="s">検索</label>
+				<input type="search" name="s">
+				<button name="s">値取得</button>
+				<span id="val_s"></span>
+			</p>
+		</div>
+		<div class="left">
+<pre>
+<code>
+&lt;h5&gt;ラジオボタン&lt;/h5&gt;
+&lt;p&gt;
+	&lt;input type="radio" name="year" value="2"&gt;
+	&lt;label for="year2"&gt;2年生&lt;/label&gt;
+	&lt;input type="radio" name="year" value="3"&gt;
+	&lt;label for="year3"&gt;3年生&lt;/label&gt;
+&lt;/p&gt;
+
+&lt;h5&gt;チェックボックス&lt;/h5&gt;
+&lt;p&gt;
+	&lt;input type="checkbox" name="hobby" value="manga"&gt;
+	&lt;label for="manga"&gt;まんが&lt;/label&gt;
+	&lt;input type="checkbox" name="hobby" value="anime"&gt;
+	&lt;label for="anime"&gt;アニメ&lt;/label&gt;
+	&lt;input type="checkbox" name="hobby" value="game"&gt;
+	&lt;label for="game"&gt;ゲーム&lt;/label&gt;
+&lt;/p&gt;
+</code>
+</pre>
+		</div>
+		<div class="right">
+			<h5>ラジオボタン</h5>
+			<p>
+				<input type="radio" name="year" value="2">
+				<label for="year2">2年生</label>
+				<input type="radio" name="year" value="3">
+				<label for="year3">3年生</label>
+			</p>
+			<button name="year" class="multichoice">値取得</button>
+			<span id="val_year"></span>
+			<h5>チェックボックス</h5>
+			<p>
+				<input type="checkbox" name="hobby" value="manga">
+				<label for="manga">まんが</label>
+				<input type="checkbox" name="hobby" value="anime">
+				<label for="anime">アニメ</label>
+				<input type="checkbox" name="hobby" value="game">
+				<label for="game">ゲーム</label>
+			</p>
+			<button name="hobby" class="multichoice">値取得</button>
+			<span id="val_hobby"></span>
+		</div>
+		<div class="left">
+<pre>
+<code>
+&lt;label for="e"&gt;e-mail&lt;/label&gt;
+&lt;input type="email" name="e"&gt;
+&lt;label for="u"&gt;URL&lt;/label&gt;
+&lt;input type="url name="u""&gt;
+</code>
+</pre>
+		</div>
+		<div class="right">
+			<p>
+				<label for="e">e-mail</label></code>
+				<input type="email" name="e">
+				<button name="e">値取得</button>
+				<span id="val_e"></span>
+			</p>
+			<p>
+				<label for="u">URL</label>
+				<input type="url" name="u">
+				<button name="u">値取得</button>
+				<span id="val_u"></span>
+			</p>
+		</div>
+	</div>
+  </body>
+</html>

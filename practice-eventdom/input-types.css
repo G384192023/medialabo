@@ -1,0 +1,17 @@
+div.twocol {
+    display: grid;                      /* グリッドレイアウトにする*/
+    grid-template-columns: 1fr 1fr; /* 3列にする．幅は 1:2:2 の比率*/
+    /*grid-auto-rows: 100px 100px;        /* 高さは 100px */
+    grid-gap: 10px;                     /* 隣り合う行（列）の間隔を 10px に*/
+
+    width: 500px;
+}
+
+div.left {
+    border: 1px gray solid;
+	padding: 10px;
+}
+
+div.right {
+	padding: 10px;
+}
