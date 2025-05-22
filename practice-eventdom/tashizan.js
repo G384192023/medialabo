@@ -21,4 +21,3 @@ document.addEventListener("DOMContentLoaded", function () {
     answer.textContent = result;
     console.log("計算結果: " + result);
   }
-  
