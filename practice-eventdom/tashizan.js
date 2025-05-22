@@ -1,23 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const button = document.getElementById("calc");
-    button.addEventListener("click", calc);
-  });
-  
-  function calc() {
-    const left = document.getElementById("left").value;
-    const right = document.getElementById("right").value;
-  
-    const l = Number(left);
-    const r = Number(right);
-  
-    const answer = document.getElementById("answer");
-  
-    if (isNaN(l) || isNaN(r)) {
-      answer.textContent = "数字を入力してください";
-      return;
-    }
-  
-    const result = l + r;
-    answer.textContent = result;
-    console.log("計算結果: " + result);
-  }
+function a() {
+  let i = document.querySelector('input[name="left"]');
+  let j = document.querySelector('input[name="right"]');
+  let left = i.value;
+  let right = j.value;
+  let n = Number(left);
+  let z = Number(right);
+  let sum = n + z;
+  let r = document.querySelector('span[id="answer"]');
+  r.textContent = sum;
+}
+let b = document.querySelector('button#calc');
+b.addEventListener('click,', a);
