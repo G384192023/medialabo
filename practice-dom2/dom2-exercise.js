@@ -15,36 +15,19 @@ let gakka = [
 ];
 
 //////////////// ここから下にプログラムを書きたそう!
-console.log(campus.address);
-
-for (let n of campus.buildingD) {
-  console.log(n);
-}
-
-for (let s of gakka) {
-  console.log(s.name);
-}
-
-let a = document.createElement('p');
-a.textContent = kaisu;
-
-》 l = document.createElement('li');      // 赤のli要素を作成して，
-》 l.textContent = '赤';                  // ul要素の中に追加
-》 u.insertAdjacentElement('beforeend', l);        
-
 function show() {
 	let a = document.createElement('p');
 	a.textContent = canpus.adress;
     let b = document.querySelector('h2#addr');
-    b.insertAdjacentElement('afterend',a);  
+    b.insertAdjacentElement('afterend', a);  
     let c = document.createElement('ul');
     for (let n of gakka) {
         a = document.createElement('li');
         a.textContent = n.name;
-        c.insertAdjacentElement('beforeend',a);
+        c.insertAdjacentElement('beforeend', a);
     }
     let d = document.querySelector('h2#dept');
-    d.insertAdjacentElement('afterend',c);
+    d.insertAdjacentElement('afterend', c);
 }
 let e = document.querySelector('button#show');
-e.addEventListener('click',show);
+e.addEventListener('click', show);
