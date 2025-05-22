@@ -21,8 +21,6 @@ function hantei() {
     
     
     // 課題3-1: 正解判定する
-    
-
     console.log(kaisu + '回目の予想:' + yoso);
     A = (kaisu + '回目の予想:' + yoso);
  
