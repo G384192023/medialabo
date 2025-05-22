@@ -30,15 +30,21 @@ a.textContent = kaisu;
 
 》 l = document.createElement('li');      // 赤のli要素を作成して，
 》 l.textContent = '赤';                  // ul要素の中に追加
-》 u.insertAdjacentElement('beforeend', l);     
+》 u.insertAdjacentElement('beforeend', l);        
 
-》 l = document.createElement('li');      // 緑のli要素を作成して，
-》 l.textContent = '緑';                  // ul要素の中に追加
-》 u.insertAdjacentElement('beforeend', l);     
-
-》 l = document.createElement('li');      // 青のli要素を作成して，
-》 l.textContent = '青';                  // ul要素の中に追加
-》 u.insertAdjacentElement('beforeend', l);
-
-》 p = document.querySelector('p#primary');     // p#primary 要素の
-》 p.insertAdjacentElement('afterend', u);     
+function show() {
+	let a = document.createElement('p');
+	a.textContent = canpus.adress;
+    let b = document.querySelector('h2#addr');
+    b.insertAdjacentElement('afterend',a);  
+    let c = document.createElement('ul');
+    for (let n of gakka) {
+        a = document.createElement('li');
+        a.textContent = n.name;
+        c.insertAdjacentElement('beforeend',a);
+    }
+    let d = document.querySelector('h2#dept');
+    d.insertAdjacentElement('afterend',c);
+}
+let e = document.querySelector('button#show');
+e.addEventListener('click',show);
