@@ -24,3 +24,21 @@ for (let n of campus.buildingD) {
 for (let s of gakka) {
   console.log(s.name);
 }
+
+let a = document.createElement('p');
+a.textContent = kaisu;
+
+》 l = document.createElement('li');      // 赤のli要素を作成して，
+》 l.textContent = '赤';                  // ul要素の中に追加
+》 u.insertAdjacentElement('beforeend', l);     
+
+》 l = document.createElement('li');      // 緑のli要素を作成して，
+》 l.textContent = '緑';                  // ul要素の中に追加
+》 u.insertAdjacentElement('beforeend', l);     
+
+》 l = document.createElement('li');      // 青のli要素を作成して，
+》 l.textContent = '青';                  // ul要素の中に追加
+》 u.insertAdjacentElement('beforeend', l);
+
+》 p = document.querySelector('p#primary');     // p#primary 要素の
+》 p.insertAdjacentElement('afterend', u);     
