@@ -1,7 +1,23 @@
+let b = document.querySelector('#print');
+b.addEventListener('click', print);
 
 // 課題3-2 のプログラムはこの関数の中に記述すること
 function print(data) {
+  let resultDiv = document.querySelector('div#result');
+  resultDiv.innerHTML = '';
 
+  let g = document.querySelector('select#genre');
+  let idx = g.selectedIndex;
+  let os = g.querySelectorAll('option');
+  let o = os.item(idx);
+
+  console.log('検索キー: ' + o.textContent);
+  let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G0' + o.getAttribute('value') + '.json';
+
+  axios.get(url)
+  .then(showResult)
+  .catch(showError)
+  .then(finish);
 }
 
 // 課題5-1 の関数 printDom() はここに記述すること
@@ -238,3 +254,4 @@ let data = {
     ]
   }
 };
+

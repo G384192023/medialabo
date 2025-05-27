@@ -17,7 +17,7 @@ let gakka = [
 //////////////// ここから下にプログラムを書きたそう!
 function show() {
 	let a = document.createElement('p');
-	a.textContent = canpus.adress;
+	a.textContent = campus.address;
     let b = document.querySelector('h2#addr');
     b.insertAdjacentElement('afterend', a);  
     let c = document.createElement('ul');
