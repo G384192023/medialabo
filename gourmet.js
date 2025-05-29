@@ -37,7 +37,17 @@ function sendRequest() {
 
 // 課題6-1: 通信が成功した時の処理は以下に記述
 function showResult(resp) {
+  let data = resp.data;
 
+  if (typeof data === 'string') {
+    data = JSON.parse(data);
+  }
+
+  let div = document.querySelector('div#result');
+
+  let resultCount = data.results.shop.length;
+  let resultCountMessage = document.createElement('h3');
+  resultCountMessage, = 
 }
 
 // 課題6-1: 通信エラーが発生した時の処理

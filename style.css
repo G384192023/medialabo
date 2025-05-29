@@ -1,6 +1,6 @@
 p {
     font-family: cursive;
-	color: rgb(13, 120, 166);
+	color: rgb(0, 10, 143);
 }
 
 p.info {
@@ -9,16 +9,16 @@ p.info {
 }
 
 h1 {
-    color: rgb(0, 0, 0);
-	text-shadow: rgb(33, 100, 255) 1px 0 10px;
+    color: rgb(0, 8, 255);
+	text-shadow: rgb(103, 196, 246) 1px 0 10px;
 }
  
 h2 {
-	color: rgb(0, 0, 0);
-	background: linear-gradient(.25turn, rgb(191, 207, 235), 50%, #5cd3ff);
+	color: #c3e2ff;
+	background: linear-gradient(.25turn, rgb(8, 0, 255), 50%, #2e00ab);
 }
 
 h3 {
-    color: rgb(0, 0, 0);
-	text-shadow: rgb(33, 100, 255) 1px 0 10px;
+    color: rgb(21, 99, 255);
+	text-shadow: rgb(40, 179, 230) 1px 0 10px;
 }
