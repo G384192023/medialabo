@@ -15,9 +15,9 @@ function print(data) {
   let url = 'https://www.nishita-lab.org/web-contents/jsons/hotpepper/G0' + o.getAttribute('value') + '.json';
 
   axios.get(url)
-  .then(showResult)
-  .catch(showError)
-  .then(finish);
+      .then(showResult)
+      .catch(showError)
+      .then(finish);
 }
 
 // 課題5-1 の関数 printDom() はここに記述すること
