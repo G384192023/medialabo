@@ -24,7 +24,38 @@ function print(data) {
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+  const old = document.getElementById("result");
+  if (old) {
+    old.remove();
+  }
 
+  const resultDiv = document.createElement("div");
+  resultDiv.id = "result";
+  document.body.appendChild(resultDiv);
+
+  for (const shop of data.results.shop) {
+    const shopDiv = document.createElement("div");
+
+    const name = document.createElement("h2");
+    name.textContent = shop.name;
+
+    const address = document.createElement("p");
+    address.textContent = "住所: " + shop.address;
+
+    const genre = document.createElement("p");
+    genre.textContent = "ジャンル: " + shop.genre.name;
+
+    const open = document.createElement("p");
+    open.textContent = "営業時間: " + shop.open;
+
+    shopDiv.appendChild(name);
+    shopDiv.appendChild(address);
+    shopDiv.appendChild(genre);
+    shopDiv.appendChild(open);
+    shopDiv.appendChild(document.createElement("hr"));
+
+    resultDiv.appendChild(shopDiv);
+  }
 }
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
@@ -34,7 +65,30 @@ function printDom(data) {
 
 // 課題6-1 のイベントハンドラ sendRequest() の定義
 function sendRequest() {
+  const keyword = document.getElementById("keyword").value;
 
+
+  const url = `https://webapi.example.com/gourmet?key=API_KEY&keyword=${encodeURIComponent(keyword)}`;
+
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", url);
+  xhr.responseType = "json";
+
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      showResult(xhr.response);
+    } else {
+      showError(xhr.status);
+    }
+    finish();
+  };
+
+  xhr.onerror = function () {
+    showError("通信エラー");
+    finish();
+  };
+
+  xhr.send();
 }
 
 // 課題6-1: 通信が成功した時の処理は以下に記述
