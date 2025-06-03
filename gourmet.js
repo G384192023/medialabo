@@ -1,5 +1,7 @@
 let b = document.querySelector('#print');
 b.addEventListener('click', print);
+let g = document.querySelector('select#genre');
+let resultDiv = document.querySelector('div#result');
 
 // 課題3-2 のプログラムはこの関数の中に記述すること
 function print(data) {
@@ -314,4 +316,3 @@ let data = {
     ]
   }
 };
-

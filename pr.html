@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>グルメ情報検索</title>
+  <script src="gourmet.js" defer></script>
+  <style>
+    #result div {
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>グルメ情報検索</h1>
+
+  <label for="keyword">キーワード:</label>
+  <input type="text" id="keyword">
+  <button id="searchBtn">検索</button>
+
+  <script>
+    document.getElementById("searchBtn").addEventListener("click", sendRequest);
+  </script>
+</body>
+</html>
