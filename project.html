@@ -4,10 +4,89 @@
     <meta charset="utf-8">
     <title>グルメ情報</title>
     <script src="gourmet.js" defer></script>
+    <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      color: #333;
+      padding: 20px;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #fff;
+      text-shadow: 2px 2px 4px #666;
+      margin-bottom: 30px;
+    }
+    
+    label {
+      font-size: 1.2em;
+      margin-right: 10px;
+    }
+
+    #keyword {
+      padding: 10px;
+      font-size: 1em;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      width: 250px;
+    }
+
+    #searchBtn {
+      background: #ff6b81;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    #searchBtn:hover {
+      background: #e74c3c;
+    }
+    
+    #result {
+      margin-top: 30px;
+    }
+    
+    #result div {
+      background: #fff;
+      border: 2px solid #ff9ff3;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease;
+    }
+
+    #result div:hover {
+      transform: scale(1.02);
+    }
+
+    h2 {
+      color: #ff6b81;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      margin: 5px 0;
+    }
+    </style>
   </head>
 
   <body>
     <h1>グルメ情報</h1>
-    <div id="gourmet-list"></div>
+    <label for="keyword">キーワード:</label>
+    <input type="text" id="keyword">
+    <button id="searchBtn">検索</button>
+
+    <script>
+    document.getElementById("searchBtn").addEventListener("click", sendRequest);
+    </script>
   </body>
 </html>
