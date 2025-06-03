@@ -81,6 +81,7 @@
 
   <body>
     <h1>グルメ情報</h1>
+    <div id="result"></div>
     <label for="keyword">キーワード:</label>
     <input type="text" id="keyword">
     <button id="searchBtn">検索</button>
@@ -88,5 +89,14 @@
     <script>
     document.getElementById("searchBtn").addEventListener("click", sendRequest);
     </script>
+
+    <br><br>
+    <label for="genre">ジャンル選択:</label>
+    <select id="genre">
+    <option value="001">居酒屋</option>
+    <option value="002">ダイニングバー</option>
+    <!-- 他のジャンルも追加可能 -->
+    </select>
+    <button id="print">ジャンル検索</button>
   </body>
 </html>
