@@ -3,24 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>プロジェクト課題</title>
-    <script src="gourmet.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="project.css">
+    <script src="gourmet.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+
+
   </head>
-
   <body>
-    <h1>グルメ情報</h1>    の検索結果
-    <div id="result"></div>
-    <label for="keyword">キーワード:</label>
-    <input type="text" id="keyword">
-    <button id="searchBtn">検索</button>
-
-    <script>
-    document.getElementById("searchBtn").addEventListener("click", sendRequest);
-    </script>
-
-    <br><br>
-    <label for="genre">ジャンル選択:</label> 選んでください
+    <h1>グルメの検索結果</h1>
+    <h2>好きなジャンルを選んでください</h2>
+    <label for="kensaku"></label>
     <select id="genre">
       <option value="01">居酒屋</option>
       <option value="02">ダイニングバー・バル</option>
@@ -40,6 +32,8 @@
       <option value="16">お好み焼き・もんじゃ</option>
       <option value="17">韓国料理</option>
     </select>
+
     <button id="print">検索</button>
-  </body>
+    <div id="result"></div>
+    </body>
 </html>
