@@ -1,75 +1,40 @@
+
+// 課題3-2 のプログラムはこの関数の中に記述すること
+function print(data) {
+
+}
+
+// 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
-  const old = document.getElementById("result");
-  if (old) old.remove();
 
-  const resultDiv = document.createElement("div");
-  resultDiv.id = "result";
-  document.body.appendChild(resultDiv);
-
-  for (const shop of data.results.shop) {
-    const shopDiv = document.createElement("div");
-
-    const name = document.createElement("h2");
-    name.textContent = shop.name;
-
-    const address = document.createElement("p");
-    address.textContent = "住所: " + shop.address;
-
-    const genre = document.createElement("p");
-    genre.textContent = "ジャンル: " + shop.genre.name;
-
-    const open = document.createElement("p");
-    open.textContent = "営業時間: " + shop.open;
-
-    shopDiv.appendChild(name);
-    shopDiv.appendChild(address);
-    shopDiv.appendChild(genre);
-    shopDiv.appendChild(open);
-    shopDiv.appendChild(document.createElement("hr"));
-
-    resultDiv.appendChild(shopDiv);
-  }
 }
 
+// 課題6-1 のイベントハンドラ登録処理は以下に記述
+
+
+
+
+// 課題6-1 のイベントハンドラ sendRequest() の定義
 function sendRequest() {
-  const keyword = document.getElementById("keyword").value;
 
-  // プロジェクト課題のURL例：今回は static JSON を使った簡易版と仮定
-  const url = `https://webapi.example.com/gourmet?key=API_KEY&keyword=${encodeURIComponent(keyword)}`;
-
-  const xhr = new XMLHttpRequest();
-  xhr.open("GET", url);
-  xhr.responseType = "json";
-
-  xhr.onload = function () {
-    if (xhr.status === 200) {
-      showResult(xhr.response);
-    } else {
-      showError(xhr.status);
-    }
-    finish();
-  };
-
-  xhr.onerror = function () {
-    showError("通信エラー");
-    finish();
-  };
-
-  xhr.send();
 }
 
-function showResult(response) {
-  printDom(response);
+// 課題6-1: 通信が成功した時の処理は以下に記述
+function showResult(resp) {
+
 }
 
-function showError(error) {
-  console.error("通信エラー:", error);
-  alert("検索に失敗しました: " + error);
+// 課題6-1: 通信エラーが発生した時の処理
+function showError(err) {
+    console.log(err);
 }
 
+// 課題6-1: 通信の最後にいつも実行する処理
 function finish() {
-  console.log("通信完了");
+    console.log('Ajax 通信が終わりました');
 }
 
-// 以下の行は最初の確認用（必要に応じて削除）
-// printDom(data);
+////////////////////////////////////////
+// 以下はグルメのデータサンプル
+// 注意: 第5回までは以下を変更しないこと！
+// 注意2: 課題6-1 で以下をすべて削除すること
