@@ -107,12 +107,12 @@ function showResult(resp) {
 
   let resultcount = data.results.shop.length;
   let resultcountmessage = document.createElement('h3');
-  resultcountmessage.textContent = `検索結果: ${resultcount}件ヒットしました。`;
+  resultcountmessage.textContent = '検索結果: ' +resultcount+ '件ヒットしました。';
   div.appendChild(resultcountmessage);
 
   data.results.shop.forEach((shop, index) => {
     let h = document.createElement('h3');
-    h.textContent = `検索結果 ${index + 1}件目`;
+    h.textContent = '検索結果' +(index + 1)+ '件目';
     div.appendChild(h);
 
     let ul = document.createElement('ul');

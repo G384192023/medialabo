@@ -16,18 +16,18 @@ let gakka = [
 
 //////////////// ここから下にプログラムを書きたそう!
 function show() {
-	let a = document.createElement('p');
-	a.textContent = campus.address;
-    let b = document.querySelector('h2#addr');
-    b.insertAdjacentElement('afterend', a);  
-    let c = document.createElement('ul');
+	let i = document.createElement('p');
+	i.textContent = campus.address;
+    let j = document.querySelector('h2#addr');
+    j.insertAdjacentElement('afterend', i);  
+    let k = document.createElement('ul');
     for (let n of gakka) {
-        a = document.createElement('li');
-        a.textContent = n.name;
-        c.insertAdjacentElement('beforeend', a);
+        i = document.createElement('li');
+        i.textContent = n.name;
+        k.insertAdjacentElement('beforeend', i);
     }
-    let d = document.querySelector('h2#dept');
-    d.insertAdjacentElement('afterend', c);
+    let l = document.querySelector('h2#dept');
+    l.insertAdjacentElement('afterend', k);
 }
-let e = document.querySelector('button#show');
-e.addEventListener('click', show);
+let m = document.querySelector('button#show');
+m.addEventListener('click', show);
