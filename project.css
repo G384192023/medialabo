@@ -1,77 +1,86 @@
 h1 {
-	color: #fff;
-	background: linear-gradient(#209cff, #68e0cf);
+  color: #e0f7fa; /* 薄いシアン */
+  background: linear-gradient(90deg, #209cff, #68e0cf);
 }
+
 h2 {
-    color: #454545;
-    text-shadow: 3px 3px #81bedb;
-    font-weight: bold;
+  color: #003366; /* 濃いネイビー */
+  text-shadow: 2px 2px #81bedb;
+  font-weight: bold;
 }
+
 h3 {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  background-color: #4a90e2; /* 明るい青 */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
+
 button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #007bff; /* ブルー */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
 }
+
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3; /* 濃い青 */
 }
+
 select {
-    padding: 10px;
-    font-size: 16px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #66aaff; /* 明るい青の枠線 */
+  border-radius: 5px;
+  color: #003366; /* テキストは濃紺 */
+  background-color: #e6f0ff; /* 薄い水色背景 */
 }
+
 li {
-    margin-bottom: 5px;
-    padding: 10px;
-    border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
 }
+
+/* 各liに青色系の異なる色を割り当て */
 li#na {
-    color: #ff5722;
-    font-size: 18px;
+  color: #004080; /* 濃紺 */
 }
+
 li#ac {
-    color: #9c27b0;
-    font-size: 18px;
+  color: #0073e6; /* 鮮やかな青 */
 }
+
 li#ad {
-    color: #2196f3;
-    font-size: 18px;
+  color: #3399ff; /* 明るい青 */
 }
+
 li#bu {
-    color: #ff9800;
-    font-size: 18px;
+  color: #1a75ff; /* 青 */
 }
+
 li#ca {
-    color: #673ab7;
-    font-size: 18px;
+  color: #66b3ff; /* 薄い青 */
 }
 
 li#ge {
-    color: #006633;
-    font-size: 18px;
+  color: #003366; /* ネイビー */
 }
+
 li#op {
-    color: #CC6677;
-    font-size: 18px;
+  color: #3366cc; /* 落ち着いた青 */
 }
+
 li#st {
-    color: #AA4499;
-    font-size: 18px;
+  color: #0059b3; /* 濃い青 */
 }
+
 li#su {
-    color: #804000;
-    font-size: 18px;
+  color: #80b3ff; /* 淡い青 */
 }
