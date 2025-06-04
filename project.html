@@ -2,85 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>グルメ情報</title>
+    <title>プロジェクト課題</title>
     <script src="gourmet.js" defer></script>
-    <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
-      color: #333;
-      padding: 20px;
-      margin: 0;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2.5em;
-      color: #fff;
-      text-shadow: 2px 2px 4px #666;
-      margin-bottom: 30px;
-    }
-    
-    label {
-      font-size: 1.2em;
-      margin-right: 10px;
-    }
-
-    #keyword {
-      padding: 10px;
-      font-size: 1em;
-      border: 2px solid #ccc;
-      border-radius: 10px;
-      width: 250px;
-    }
-
-    #searchBtn {
-      background: #ff6b81;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 1em;
-      border-radius: 10px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    #searchBtn:hover {
-      background: #e74c3c;
-    }
-    
-    #result {
-      margin-top: 30px;
-    }
-    
-    #result div {
-      background: #fff;
-      border: 2px solid #ff9ff3;
-      border-radius: 15px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-      transition: transform 0.2s ease;
-    }
-
-    #result div:hover {
-      transform: scale(1.02);
-    }
-
-    h2 {
-      color: #ff6b81;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.1em;
-      margin: 5px 0;
-    }
-    </style>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="project.css">
   </head>
 
   <body>
-    <h1>グルメ情報</h1>
+    <h1>グルメ情報</h1>    の検索結果
     <div id="result"></div>
     <label for="keyword">キーワード:</label>
     <input type="text" id="keyword">
@@ -91,12 +20,26 @@
     </script>
 
     <br><br>
-    <label for="genre">ジャンル選択:</label>
+    <label for="genre">ジャンル選択:</label> 選んでください
     <select id="genre">
-    <option value="001">居酒屋</option>
-    <option value="002">ダイニングバー</option>
-    <!-- 他のジャンルも追加可能 -->
+      <option value="01">居酒屋</option>
+      <option value="02">ダイニングバー・バル</option>
+      <option value="03">創作料理</option>
+      <option value="04">和食</option>
+      <option value="05">洋食</option>
+      <option value="06">イタリアン・フレンチ</option>
+      <option value="07">中華</option>
+      <option value="08">焼肉・ホルモン</option>
+      <option value="09">アジア・エスニック料理</option>
+      <option value="10">各国料理</option>
+      <option value="11">カラオケ・パーティ</option>
+      <option value="12">バー・カクテル</option>
+      <option value="13">ラーメン</option>
+      <option value="14">カフェ・スイーツ</option>
+      <option value="15">その他グルメ</option>
+      <option value="16">お好み焼き・もんじゃ</option>
+      <option value="17">韓国料理</option>
     </select>
-    <button id="print">ジャンル検索</button>
+    <button id="print">検索</button>
   </body>
 </html>
